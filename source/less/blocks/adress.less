@@ -69,11 +69,11 @@
 
 .adress-block__img{
     position: absolute;
-    content: "";
     width: 100%;
     top: 0;
     left: 0;
     z-index: -1;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 .adress-block__container {
@@ -123,7 +123,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: url(../../img/back.png) @strong-blue bottom repeat-x;
+    background: url(../img/back.png) @strong-blue bottom repeat-x;
     @media (min-width: @tablet-width) {
         min-height: 300px;
         display: grid;
