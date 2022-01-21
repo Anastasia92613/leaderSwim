@@ -1,0 +1,54 @@
+.inst-footer {
+  padding: 20px 0;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+    &__title {
+      font-family: @basic-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: @basic-white;
+      @media (min-width: @tablet-width) {
+        text-align: start;
+        font-size: 25px;
+        line-height: 28px;
+        padding: 0 20px;
+        margin: 34px 20px 0 0;
+      }
+      @media (min-width: @desktop-width) {
+        padding: 0;
+      }
+    }
+    &__text{
+      font-family: @second-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      color: @basic-white;
+      text-align: center;
+      padding: 0 20px;
+      @media (min-width: @tablet-width) {
+        text-align: start;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      padding: 20px 0 0 0;
+      @media (min-width: @tablet-width) {
+        justify-content: flex-start;
+      }
+      .inst-footer__icon {
+      }
+      .inst-footer__text {
+      }
+    }
+  }

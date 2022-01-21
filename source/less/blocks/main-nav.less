@@ -1,0 +1,39 @@
+.main-nav{}
+.main-nav__list{
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.main-nav__item:not(:last-child){
+    margin-right: 14px;
+    @media (min-width: @tablet-width) {
+        margin-right: 30px;
+    }
+}
+
+.main-nav__link{
+    color: @basic-white;
+    font-family: @second-font;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    @media (min-width: @tablet-width) {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+.main-nav__icon {
+    vertical-align: middle;
+    @media (min-width: @tablet-width) {
+        width: 25px;
+        height: 25px;
+    }
+    @media (min-width: @desktop-width) {
+        width: 20px;
+        height: 20px;
+    }
+}

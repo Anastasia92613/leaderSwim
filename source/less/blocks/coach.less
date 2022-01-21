@@ -1,0 +1,127 @@
+.coach {
+    display: flex;
+    flex-direction: column;
+}
+.coach__section {
+    background: url(../../img/coach/background--180.png) 0 0 repeat-x;
+    background-color: @strong-blue;
+}
+.coach__intro {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 510px;
+    @media (min-width: @tablet-width) {
+        min-height: 768px;
+    }
+    @media (min-width: @desktop-width) {
+        min-height: 510px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.coach__wrapper {
+    padding: 34px 0 0 0;
+    @media (min-width: @tablet-width) {
+        padding: 41px 0 0 0;
+    }
+    @media (min-width: @desktop-width) {
+        padding: 70px 0 0 0;
+    }
+}
+.coach__title {
+    font-family: @basic-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 28px;
+    color: @basic-white;
+    text-align: center;
+    text-transform: uppercase;
+    @media (min-width: @tablet-width) {
+        font-size: 40px;
+        line-height: 37px;
+    }
+    @media (min-width: @desktop-width) {
+        text-align: start;
+    }
+}
+.coach__container {
+    padding: 20px 0 0 0;
+    @media (min-width: @tablet-width) {
+        padding: 20px 0 0 0;
+    }
+    @media (min-width: @desktop-width) {
+        padding: 40px 0 0 0;
+    }
+}
+
+.coach__descripton {
+    font-family: @second-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: @basic-white;
+    text-align: center;
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    @media (min-width: @desktop-width) {
+        text-align: start;
+    }
+}
+.coach__background {
+    position: relative;
+    margin-top: 17px;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    object-fit: contain;
+    z-index: -1;
+}
+
+
+.coach__list {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: @desktop-width) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.coach__item:not(:last-child) {
+    padding-bottom: 20px;
+}
+.trainer {}
+.trainer__photo {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    background-color: @strong-blue;
+}
+.trainer__title {
+    font-family: @basic-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @pure;
+    padding: 20px 47px 0 47px;
+}
+.trainer__desc {
+    font-family: @second-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: @dark-gray;
+    padding: 15px 0 0 0;
+}

@@ -1,0 +1,94 @@
+.group {
+    @media (min-width: @desktop-width) {
+        position: relative;
+    }
+}
+.grop__header {
+    font-family: @basic-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @pure;
+    padding: 20px 0 0 0;
+    @media (min-width: @tablet-width) {
+        font-size: 30px;
+        line-height: 28px;
+        padding: 20px 158px  0;
+    }
+    @media (min-width: @desktop-width) {
+        padding: 0;
+        position: absolute;
+        color: @basic-white;
+        top: 86px;
+        left: 0;
+        right: 0;
+    }
+}
+.group__list {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.group__item {
+    padding: 20px 0 0 0;
+    @media (min-width: @tablet-width) {
+        padding: 40px 0 0 0;
+    }
+}
+
+.group__wrapper {
+    position: relative;
+}
+
+
+.group__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: url(../../img/groups--tablet.png) center no-repeat;
+    background-size: cover;
+    @media (min-width: @desktop-width) {
+        padding-top: 44px;
+        background: url(../../img/back.png) @strong-blue bottom repeat-x;
+    }
+}
+.group__title {
+    font-family: @basic-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @pure;
+    padding: 20px 0 0 0;
+    @media (min-width: @tablet-width) {
+        padding: 40px 0 0 0;
+        font-size: 30px;
+        line-height: 28px;
+    }
+}
+.group__text {
+    font-family: @second-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: @dark-gray;
+    padding: 15px 0 0 0;
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 20px 0 0 0;
+    }
+    @media (min-width: @desktop-width) {
+        padding: 30px 0 0 0;
+    }
+}
