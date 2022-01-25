@@ -3,4 +3,4 @@
 1. Скачать проект.
 2. Выполнить команду npm i
 3. Запустить проект - npm start
-ссылка на готовую работу:  http://swimming.tri-leader.ru/
+ссылка на готовую работу:  https://swimming.tri-leader.ru/
