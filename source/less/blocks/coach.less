@@ -114,6 +114,16 @@
     text-transform: uppercase;
     color: @pure;
     padding: 20px 47px 0 47px;
+    @media (min-width: @tablet-width) {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    @media (min-width: @desktop-width) {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: start;
+        padding: 20px 47px 0 0;
+    }
 }
 .trainer__desc {
     font-family: @second-font;
@@ -124,4 +134,13 @@
     text-align: center;
     color: @dark-gray;
     padding: 15px 0 0 0;
+    @media (min-width: @tablet-width) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    @media (min-width: @desktop-width) {
+        font-size: 17px;
+        line-height: 20px;
+        text-align: start;
+    }
 }
